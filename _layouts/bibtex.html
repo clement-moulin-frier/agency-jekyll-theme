@@ -1,0 +1,21 @@
+---
+---
+<html>
+<head></head>
+<body>
+  <h1>{{ page.entry.title }}</h1>
+  <h2>
+  	{% raw %}
+  	{{ page.entry.author }}
+  	{% endraw %}
+  </h2>
+  {{ page.entry.hal_id }}
+  <p><a href="https://hal.archives-ouvertes.fr/{{ page.entry.hal_id }}/document">PDF</a></p>
+  <p>
+  	{% raw %}
+  	{{ page.entry.bibtex }}
+  	{% endraw %}
+  </p>
+  <p>{{ page.entry.abstract }}</p>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<section id="publications">
+<h2 class="section-heading text-center">Publications</h2>
+<h3>International journals</h3>
+{% bibliography  --query @article %%}
+<h3>Book chapter</h3>
+{% bibliography  --query @inbook %%}
+<h3>International conferences</h3>
+{% bibliography  --query @inproceedings %%}
+<h3>Theses</h3>
+{% bibliography  --query @phdthesis %%}
+{% bibliography  --query @mastersthesis %%}
+</section>
