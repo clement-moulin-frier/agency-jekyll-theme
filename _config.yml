@@ -12,59 +12,36 @@ color:
   secondary: fec503  
   secondary-dark: 333
 
-# Team names, titles and social links
-people:
-- name: Kay Garland
-  pic: 1
-  position: Lead Designer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: stack-overflow
-      url: #
-
-- name: Larry Parker
-  pic: 2
-  position: Lead Marketer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: linkedin
-      url: #
-
-- name: Diana Petersen
-  pic: 3
-  position: Lead Developer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: google-plus
-      url: #
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
-    url: http://twitter.com/jekyllrb
-  - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket 
-    url: http://bitbucket.org/jekyll
+    font: fa
+    url: http://twitter.com/Clement_MF_
   - title: github
-    url: http://github.com/jekyll
+    font: fa
+    url: http://github.com/clement-moulin-frier
+  - title: researchgate
+    font: ai
+    url: https://www.researchgate.net/profile/Clement_Moulin-Frier
+  - title: google-scholar
+    font: ai
+    url: https://scholar.google.com/citations?user=rBnV60QAAAAJ
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
+  - line: Laboratory of Synthetic, Perceptive, Emotive and Cognitive Systems (SPECS)
+  - line: Universitat Pompeu Fabraa
+  - line: Roc Boronat, 138
+  - line: 08018 Barcelona, Spain
+
+scholar:
+  sort_by: year
+  order: descending
+  bibliography: publications.bib
+  bibliography_template: <abbr>[]</abbr>{{reference}} {{ entry.note }}
+# gems: ['jekyll/scholar']
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+permalink: none
