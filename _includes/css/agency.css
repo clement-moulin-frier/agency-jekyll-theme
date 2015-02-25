@@ -36,7 +36,7 @@ a.active {
 }
 
 a {
-    color: #{{ site.color.primary }};
+    color: #{{ site.color.link }};
 }
 
 a:hover,
@@ -653,7 +653,7 @@ aside.clients img {
     margin: 50px auto;
 }
 
-section#contact {
+/*section#contact {
     background-color: #222;
     background-image: url(../img/map-image.png);
     background-position: center;
@@ -716,7 +716,7 @@ section#contact:-ms-input-placeholder {
 
 section#contact .text-danger {
     color: #e74c3c;
-}
+}*/
 
 footer {
     padding: 25px 0;
