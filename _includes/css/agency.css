@@ -170,6 +170,10 @@ fieldset[disabled] .btn-xl.active {
     background-color: #fff;
 }
 
+.navbar-fixed {
+    background-color: #fff;
+}
+
 .navbar-default {
     border-color: transparent;
     background-color: #222;
@@ -522,6 +526,11 @@ section h3.section-subheading {
     left: -14px;
     border-right-width: 14px;
     border-left-width: 0;
+}
+
+.timeline-panel ul, ol {
+    left: auto;
+    text-align: left;
 }
 
 .timeline>li:last-child {
