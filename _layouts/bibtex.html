@@ -1,21 +1,24 @@
 ---
+layout: default
 ---
-<html>
-<head></head>
-<body>
+
+{% include navbar-fixed.html %}
+
+<section>
   <h1>{{ page.entry.title }}</h1>
   <h2>
-  	{% raw %}
-  	{{ page.entry.author }}
-  	{% endraw %}
+    {% raw %}
+    {{ page.entry.author }}
+    {% endraw %}
   </h2>
-  {{ page.entry.hal_id }}
+  <h3>Link to the article</h3>
   <p><a href="https://hal.archives-ouvertes.fr/{{ page.entry.hal_id }}/document">PDF</a></p>
+  <h3>Abstract</h3>
+  <p>{{ page.entry.abstract }}</p>
+  <h3>Bibtex</h3>
   <p>
   	{% raw %}
-  	{{ page.entry.bibtex }}
+  	<pre>{{ page.entry.bibtex }}</pre>
   	{% endraw %}
   </p>
-  <p>{{ page.entry.abstract }}</p>
-</body>
-</html>
+</section>
