@@ -11,10 +11,14 @@ color:
   primary: fed136
   secondary: fec503  
   secondary-dark: 333
+  link: B28A02
 
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
+  - title: envelope
+    font: fa
+    url: mailto:clement.moulinfrier@gmail.com
   - title: twitter
     font: fa
     url: http://twitter.com/Clement_MF_
@@ -39,9 +43,11 @@ scholar:
   sort_by: year
   order: descending
   bibliography: publications.bib
-  bibliography_template: <abbr>[]</abbr>{{reference}} {{ entry.note }}
+  reference_tagname: div
+  bibliography_list_tag: ul
+  bibliography_template: bib
 # gems: ['jekyll/scholar']
 
 # Build settings
 markdown: kramdown
-permalink: none
+permalink: pretty
