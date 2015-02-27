@@ -35,7 +35,8 @@ social:
 # Postal address (add as many lines as necessary)
 address:
   - line: Laboratory of Synthetic, Perceptive, Emotive and Cognitive Systems (SPECS)
-  - line: Universitat Pompeu Fabraa
+  - line: Center of Autonomous Systems and Neurorobotics
+  - line: Universitat Pompeu Fabra
   - line: Roc Boronat, 138
   - line: 08018 Barcelona, Spain
 
