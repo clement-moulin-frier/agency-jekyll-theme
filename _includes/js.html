@@ -15,3 +15,31 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="{{ "/js/agency.js" | prepend: site.baseurl }}"></script>
+
+    <script type="text/javascript">
+    var height = document.getElementById("navbar").offsetHeight + 20;
+        $('head').append('<style>ul.bibliography li div:before {display: block; content: " "; margin-top: ' + String(-height) + 'px; height: ' + String(height) + 'px; visibility: hidden;}</style>');
+        // var menuoffset = document.createElement("div");
+        // menuoffset.style.display = "block";
+        // menuoffset.style.display = "block";
+        // menuoffset.style.display = "block";
+        // $("ul.bibliography li div").before("<div class="menuoffset"></div>");
+        // 
+        // var height = document.getElementById("navbar").offsetHeight + 20;
+        // // var el = document.querySelectorAll("ul.bibliography li")
+        // var bl = document.getElementById("publications");
+        // bl.style.marginTop = "80px";
+        // console.log(bl)
+        // for(var i = 0; i < el.length; i++) 
+        // {
+        //     el[i].style.marginTop = "80px";  //String(-height) + "px";
+        //     el[i].style.marginBottom = "-80px";  //String(-height) + "px";
+        //     // el[i].style.height = "80px"; //String(height) + "px";
+        //     // el[i].previousSibling.style.marginTop = String(-height) + "px";
+        //     // el[i].previousSibling.style.height = String(height) + "px";
+        // }
+
+        // document.querySelector("ul.bibliography li div:before").style.marginTop = String(-height) + "px";
+        // document.getElementsByClassName("bibliography")[0].style.height = String(height) + "px";
+        // console.log(document.querySelector("ul.bibliography li div:before").style.marginTop);
+    </script>

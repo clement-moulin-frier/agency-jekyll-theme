@@ -61,13 +61,13 @@ ul.bibliography {
     list-style-type: none;
 }
 
-ul.bibliography li div:before { 
+/*ul.bibliography li div:before { 
   display: block; 
   content: " "; 
   margin-top: -80px; 
   height: 80px; 
   visibility: hidden; 
-}
+}*/
 
 .img-centered {
     margin: 0 auto;
