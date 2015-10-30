@@ -11,10 +11,20 @@ layout: default
     {{ page.entry.author }}
     {% endraw %}
   </h2>
-  <h3>Link to the article</h3>
-  <p><a href="https://hal.archives-ouvertes.fr/{{ page.entry.hal_id }}/document">PDF</a></p>
-  <h3>Abstract</h3>
-  <p>{{ page.entry.abstract }}</p>
+  <h3> </h3>
+  {% if page.entry.url %}
+    <h3><a href="{{page.entry.url}}" target="_blank">Link to the article</a></h3>
+  {% elsif page.entry.hal_id %}
+    <h3><a href="https://hal.archives-ouvertes.fr/{{ page.entry.hal_id }}/document" target="_blank">Link to the article</a></h3>
+  {% else %}
+    <h3>PDF not available here. <a href="https://scholar.google.com/scholar?q={{ page.entry.title | replace: ' ', '+' }}" target="_blank">Search in Google Scholar</a></h3>
+  {% endif %}
+
+  {% if page.entry.abstract %}
+    <h3>Abstract</h3>
+    <p>{{ page.entry.abstract }}</p>
+  {% endif %}
+
   <h3>Bibtex</h3>
   <p>
   	{% raw %}
