@@ -278,6 +278,9 @@ fieldset[disabled] .btn-xl.active {
     }
 }
 
+
+
+
 header {
     text-align: center;
     color: #fff;
@@ -291,10 +294,29 @@ header {
     -o-background-size: cover;
 }
 
+header.dummy {
+    text-align: center;
+    color: #fff;
+    background-attachment: scroll;
+    background-image: url(../img/blank_header.png);
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
 header .intro-text {
     padding-top: 100px;
     padding-bottom: 50px;
 }
+
+header.dummy .intro-text {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
 
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
