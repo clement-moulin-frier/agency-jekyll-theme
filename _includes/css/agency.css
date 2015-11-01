@@ -276,6 +276,12 @@ fieldset[disabled] .btn-xl.active {
     .navbar-default.navbar-shrink .navbar-brand {
         font-size: 1.5em;
     }
+
+    .navbar-nohome {
+        padding: 0px 0;
+        background-color: #222;
+        /*font-size: 1.5em;*/
+    }
 }
 
 

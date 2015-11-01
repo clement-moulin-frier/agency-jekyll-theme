@@ -1,5 +1,9 @@
 <!-- Navigation -->
+{% if  include.url_prefix %}
+    <nav class="navbar navbar-default navbar-fixed-top navbar-shrink navbar-nohome">
+{% else %}
     <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
+{% endif %}
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -9,23 +13,23 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="/#page-top">{{site.title}}</a>
+                <a class="navbar-brand page-scroll" href="{{ include.url_prefix }}#page-top">{{site.title}}</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
-                        <a href="/#page-top"></a>
+                        <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="/#about">Background</a>
+                        <a class="page-scroll" href="{{ include.url_prefix }}#about">Background</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="/#publications">Publications</a>
+                        <a class="page-scroll" href="{{ include.url_prefix }}#publications">Publications</a>
                     </li>                    
                     <li>
-                        <a class="page-scroll" href="/#contact">Contact</a>
+                        <a class="page-scroll" href="{{ include.url_prefix }}#contact">Contact</a>
                     </li>
                 </ul>
             </div>
