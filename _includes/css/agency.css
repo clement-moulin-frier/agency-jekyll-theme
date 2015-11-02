@@ -318,10 +318,6 @@ header .intro-text {
     padding-bottom: 50px;
 }
 
-header.dummy .intro-text {
-    padding-top: 100px;
-    padding-bottom: 50px;
-}
 
 
 header .intro-text .intro-lead-in {
@@ -363,6 +359,12 @@ header .intro-text .intro-heading {
         font-weight: 700;
         line-height: 75px;
     }
+}
+
+
+header.dummy .intro-text {
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 section {
