@@ -1,8 +1,8 @@
 <!-- Navigation -->
 {% if  include.url_prefix %}
-    <nav class="navbar navbar-default navbar-fixed-top navbar-shrink navbar-nohome">
+    <nav class="navbar navbar-default navbar-fixed-top navbar-nohome">
 {% else %}
-    <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
+    <nav class="navbar navbar-default navbar-fixed-top">
 {% endif %}
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -37,11 +37,3 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-
-
-<!--
-        {% for page in site.pages %}
-          {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
-        {% endfor %}
- -->
-
