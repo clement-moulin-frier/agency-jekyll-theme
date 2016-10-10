@@ -3,7 +3,6 @@ import shutil
 import argparse
 import subprocess
 import string
-import argparse
 
  
 if __name__ == '__main__':
