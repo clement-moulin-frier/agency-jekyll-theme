@@ -1,25 +1,6 @@
 ---
-layout: default
+layout: page
 ---
-<div class="home">
-{% include navbar.html url_prefix="/" %}
-
-    <header class="dummy">
-        <div class="container">
-            <div class="intro-text">
-            </div>          
-        </div>
-    </header>
-
-<section>
-  <div class="container">
-           <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h6 class="section-heading">  &nbsp</h6>
-                </div>
-            </div>    
-    <div class="row">
-        <div class="col-lg-12">
           <h5>{{ page.entry.title }}</h5>
           <p>
             {% raw %}
@@ -45,8 +26,4 @@ layout: default
           	<pre lang="bibtex">{{ page.entry.bibtex }}</pre>
           	{% endraw %}
           </p>
-        </div>
-    </div>
-  </div>
-</section>
-</div>              
+            
