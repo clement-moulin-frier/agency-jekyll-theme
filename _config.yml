@@ -1,4 +1,4 @@
-url: http://clement-moulin-frier.github.io
+# url: http://clement-moulin-frier.github.io
 # baseurl: /
 
 # Site settings
@@ -44,6 +44,7 @@ scholar:
   sort_by: year
   order: descending
   bibliography: publications.bib
+  # bibliography: rti_course.bib
   reference_tagname: div
   bibliography_list_tag: ul
   bibliography_template: bib
