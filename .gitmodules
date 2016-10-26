@@ -1,7 +1,3 @@
 [submodule "css/academicons"]
 	path = css/academicons
 	url = https://github.com/jpswalsh/academicons.git
-[submodule "media/pycon_presentation"]
-	path = media/pycon_presentation
-	url = https://github.com/clement-moulin-frier/pycon_lyon_2014.git
-	branch = web
