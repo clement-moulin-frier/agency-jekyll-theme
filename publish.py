@@ -4,11 +4,12 @@ import argparse
 import subprocess
 import string
 
- 
+
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--dontclone", help="don't clone the repository")
+    # parser.add_argument("--submodules", help="init the submodules")
     args = parser.parse_args()
 
     name = 'clement-moulin-frier.github.io.git'
@@ -16,13 +17,18 @@ if __name__ == '__main__':
 
     tmp_dir = '/tmp/' + name
     if not args.dontclone:
-        subprocess.call(['rm', '-rf', tmp_dir])  
+        subprocess.call(['rm', '-rf', tmp_dir])
         subprocess.call(["git", "clone", "-b", "source", git_url, tmp_dir])
+    else:
+        os.chdir(tmp_dir)
+        subprocess.call(["git", "pull"])
+
     os.chdir(tmp_dir)
+    # if args.submodules:
     subprocess.call(["git", "submodule", "update", "--init"])
-    os.chdir(os.path.join(tmp_dir, 'media', 'pycon_presentation'))
-    subprocess.call(["git", "submodule", "update", "--init"])
-    os.chdir(tmp_dir)
+    # os.chdir(os.path.join(tmp_dir, 'media', 'pycon_presentation'))
+    # subprocess.call(["git", "submodule", "update", "--init"])
+    # os.chdir(tmp_dir)
     subprocess.call(["bundle", "install"])
     subprocess.call(["bundle", "exec", "jekyll", "build"])
     sub = subprocess.Popen(["git", "ls-files"], stdout=subprocess.PIPE)
