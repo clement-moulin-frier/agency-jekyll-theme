@@ -1,0 +1,23 @@
+---
+layout: page
+---
+
+# Real-Time Interaction course
+
+## Guidelines for the practical project implementation
+
+
+- Be careful of properly detaching all the behaviors and routines that are running. This avoids connection issues between the notebook and the simulator. There are several ways of doing it:
+    - Recommended method (the one that avoid most connection problems): call the `close_session` function, which automatically detaches all the behaviors and routines running on all robots and also stops the simulator. Then restart the notebook (`Kernel->Restart` in the menu) and call the `open_session` function again.
+    - Alternatively, call `epuck.detach_all_behaviors()` **and** `epuck.detach_all_routines()` on **all** robots. This has the advantage of not having to re-execute all your code since you will keep the references to the ePucks and the simulator. The simulator will still be running. This means that for example the present spheres will still be there. The sphere apparition will also still be running if it has been previously started (to stop it, you have to call `simulator.stop_sphere_apparition()`). If this method causes trouble, switch the one above.
+    - If you still have trouble, pass by the lab to show it to me.
+- Implement your project incrementally. Start implementing a first version V1 which is as simple as possible. When it works, back-up it (i.e. keep a copy of all the required files in a safe place, with a tag that will allow you to retrieve it easily). Then add a new functionality, work on it until it works as expected, and backup it as well. This will be your V2. And so on, functionality by functionality. In your report, you can compare the different versions, showing how adding a new functionality has an effect on the robot's interactions.
+- Keep the definitions of your behaviors and routines as concise as possible. Implement only one functionality (e.g obstacle avoidance) per behavior or routine. This means avoiding mixing functionalities in a single behavior: this would make your code over-complicated and very difficult to understand and debug. Well separating each functionality into a specific behavior or routine will help you a lot in keeping control of your code complexity.
+- Regarding debugging:
+    - In case a routine does not work as expected: it is recommended to run only that routine without any behavior, so that the robot stays immobile in V-REP. By moving it yourself in the simulator, it will be easier to observe what's going on.
+    - More generally: debug you code piece by piece. This means first make sure that each behavior and routine works as it should in isolation, by only starting that behavior or routine on the robot. Once each one works in isolation, integrate them together progressively (one by one, not all at the same time). Don't attempt at debugging a huge piece of code in one shot: first isolate the parts that are likely to cause the trouble and test them individually, i.e. without running the rest (hence the advantage of well separating each functionality in a single behavior).
+    - If you are loosing control on the complexity of your code (you are lost in what is happening, the code is overcomplicated and you don't understand it anymore): don't hesitate to create a new notebook where you reintegrate each part one after the other (following the previous point) and take some time to rethink the way you have coded that part, recoding it in cleaner way whenever possible. The time spend on this is not waisted at all, on the contrary it will make debugging much easier on faster. 
+    - Communicate with other teams and with myself (by email or by passing by the lab) if you're lost or if you don't see how to implement something. Don't stay blocked in isolation, communicate instead and we'll solve the problem together.
+- The main target of your project is to demonstrate that you have understood all the functionalities we have seen during the practical sessions and that you're able to integrate them in a coherent scenario of your own. Both the report and the project presentation are tools to demonstrate it in a convincing way. Let's consider an example: in your project you implement a behavior for foraging modulated by the glucose level. You have to demonstrate that this works as expected. One way to do this is to provide a figure in your report that plots both the glucose level against time and the eating events (you can use `epuck.has_eaten()` for the latter, as seen in class). You will have demonstrated that it works as expected if we clearly see on the figure that eating events occur more when the glucose level is low. You can apply this method on most of your behaviors and/or routines.
+    
+    
