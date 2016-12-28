@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 ---
 
 # Videos of Human-Robot Interaction with the DAC-H3 Cognitive architecture.
