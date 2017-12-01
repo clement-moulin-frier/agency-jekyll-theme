@@ -9,6 +9,7 @@ References
 author = {Moulin-Frier, Cl{\'{e}}ment and Fischer, T. and Petit, M. and Pointeau, G. and Puigbo, J.-Y. and Pattacini, U. and Low, S.C. and Camilleri, D. and Nguyen, P. and Hoffmann, M. and Chang, H.J. and Zambelli, M. and Mealier, A.-L. and Damianou, A. and Metta, G. and Prescott, T. and Demiris, Y. and Dominey, P.-F. and Verschure, P.},
 journal = {Submitted to IEEE Transactions on Cognitive and Developmental Systems},
 title = {{DAC-h3: A Proactive Robot Cognitive Architecture to Acquire and Express Knowledge About the World and the Self}},
+abstract = {This paper introduces a cognitive architecture for a humanoid robot to engage in a proactive, mixed-initiative exploration and manipulation of its environment, where the initiative can originate from both the human and the robot. The framework, based on a biologically-grounded theory of the brain and mind, integrates a reactive interaction engine, a number of state-of-the art perceptual and motor learning algorithms, as well as planning abilities and an autobiographical memory. The architecture as a whole drives the robot behavior to solve the symbol grounding problem, acquire language capabilities, execute goal-oriented behavior, and express a verbal narrative of its own experience in the world. We validate our approach in a human-robot interaction experiment with the iCub humanoid robot, showing that the proposed cognitive architecture can be applied in real time within a realistic scenario.},
 year = {2017},
 note = {In revision}
 }
@@ -18,7 +19,8 @@ note = {In revision}
 author = {Moulin-Frier, Clément and Brochard, Jules and Stulp, Freek and Oudeyer, Pierre-Yves},
 journal = {IEEE Transactions on Cognitive and Developmental Systems},
 title = {{Emergent Jaw Predominance in Vocal Development through Stochastic Optimization}},
-url = {http://ieeexplore.ieee.org/document/7914655/},
+abstract = {Infant vocal babbling strongly relies on jaw oscillations, especially at the stage of canonical babbling, which underlies the syllabic structure of world languages. In this paper, we propose, model and analyze an hypothesis to explain this predominance of the jaw in early babbling. This hypothesis states that general stochastic optimization principles, when applied to learning sensorimotor control, automatically generate ordered babbling stages with a predominant exploration of jaw movements in early stages. The reason is that those movements impact the auditory effects more than other articulators. In previous computational models, such general principles were shown to selectively freeze and free degrees of freedom in a model reproducing the proximo-distal development observed in infant arm reaching. The contribution of this paper is to show how, using the same methods, we are able to explain such patterns in vocal development. We present three experiments. The two first ones show that the recruitment order of articulators emerging from stochastic optimization depends on the target sound to be achieved but that on average the jaw is largely chosen as the first recruited articulator. The third experiment analyses in more detail how the emerging recruitment order is shaped by the dynamics of the optimization process.},
+url = {http://www.pyoudeyer.com/moulinFrieretalTCDS17.pdf},
 year = {2017},
 note = {Accepted}
 }
@@ -29,6 +31,8 @@ doi = {10.1109/TCDS.2017.2699578},
 issn = {2379-8920},
 journal = {IEEE Transactions on Cognitive and Developmental Systems},
 title = {{Autonomous Discovery of Motor Constraints in an Intrinsically-Motivated Vocal Learner}},
+abstract = {Abstract:
+This work introduces new results on the modeling of early-vocal development using artificial intelligent cognitive architectures and a simulated vocal tract. The problem is addressed using intrinsically-motivated learning algorithms for autonomous sensorimotor exploration, a kind of algorithm belonging to the active learning architectures family. The artificial agent is able to autonomously select goals to explore its own sensorimotor system in regions where its competence to execute intended goals is improved. We propose to include a somatosensory system to provide a proprioceptive feedback signal to reinforce learning through the autonomous discovery of motor constraints. Constraints are represented by a somatosensory model which is unknown beforehand to the learner. Both the sensorimotor and somatosensory system are modeled using Gaussian mixture models. We argue that using an architecture which includes a somatosensory model would reduce redundancy in the sensorimotor model and drive the learning process more efficiently than algorithms taking into account only auditory feedback. The role of this proposed system is to predict whether an undesired collision within the vocal tract under a certain motor configuration is likely to occur. Thus, compromised motor configurations are rejected, guaranteeing that the agent is less prone to violate its own constraints.},
 url = {http://ieeexplore.ieee.org/document/7914655/},
 year = {2017},
 note = {Accepted}
@@ -96,6 +100,7 @@ author = "Clément Moulin-Frier and Paul Verschure"
   title={Top-Down and Bottom-Up Interactions between Low-Level Reactive Control and Symbolic Rule Learning in Embodied Agents},
   author={Cl{\'e}ment Moulin-Frier and Xerxes D. Arsiwalla and Jordi-Ysard Puigb{\`o} and Mart{\'i} S{\'a}nchez-Fibla and Armin Duff and Paul F. M. J. Verschure},
   booktitle={Proceedings of the Workshop on Cognitive Computation: Integrating neural and symbolic approaches. 30th Annual Conference on Neural Information Processing Systems (NIPS 2016)},
+  abstract =  {Mammals bootstrap their cognitive structures through embodied interaction with the world. This raises the question: how the reactive control of initial behavior is recurrently coupled to the high-level symbolic representations they give rise to? We investigate this question in the framework of the "Distributed Adaptive Control" (DAC) cognitive architecture, where we study top-down and bottom-up interactions between low-level reactive control and symbolic rule learning in embodied agents. Reactive behaviors are modeled using a neural allostatic controller, whereas high-level behaviors are modeled using a biologically-grounded memory network reflecting the role of the prefrontal cortex. The interaction of these modules in a closed-loop fashion suggests how symbolic representations might have been shaped from low-level behaviors and recruited for behavior optimization.},
   year={2016},
   url={http://clement-moulin-frier.github.io/pdf/moulinfrier2016topdown.pdf}
 }
@@ -299,6 +304,7 @@ those of the human in order to maintain the social interaction over the time. }
   Title                    = {Curiosity-driven phonetic learning},
   Author                   = {Cl\'{e}ment Moulin-Frier and Pierre-Yves Oudeyer},
   Booktitle                = {International Conference on Development and Learning, Epirob, San Diego, USA. Best paper award.},
+  Abstract                 = {This article studies how developmental phonetic learning can be guided by pure curiosity-driven exploration, also called intrinsically motivated exploration. Phonetic learning refers here to learning how to control a vocal tract to reach acoustic goals. We compare three different exploration strategies for learning the auditory-motor inverse model: random motor exploration, random goal selection with reaching, and curiositydriven active goal selection with reaching. Using a realistic vocal tract model, we show how intrinsically motivated learning driven by competence progress can generate automatically developmental structure in both articulatory and auditory modalities, displaying patterns in line with some experimental data from infants.},
   Year                     = {2012},
   hal_id                   = {hal-00762795}
 }
