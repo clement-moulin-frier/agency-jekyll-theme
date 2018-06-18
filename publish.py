@@ -24,6 +24,8 @@ if __name__ == '__main__':
         subprocess.call(["git", "pull"])
 
     os.chdir(tmp_dir)
+    subprocess.call(["git", "config", "user.email", '"clement.moulinfrier@gmail.com"'])
+    subprocess.call(["git", "config", "user.name", '"Clement Moulin-Frier"'])
     # if args.submodules:
     subprocess.call(["git", "submodule", "update", "--init"])
     # os.chdir(os.path.join(tmp_dir, 'media', 'pycon_presentation'))
