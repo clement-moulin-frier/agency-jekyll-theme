@@ -12,6 +12,8 @@ body {
 
 .text-muted {
     color: #777;
+    font-size: 18px;
+    padding-bottom: 20px;
 }
 
 .text-primary {
