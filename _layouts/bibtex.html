@@ -3,9 +3,7 @@ layout: page
 ---
           <h5>{{ page.entry.title }}</h5>
           <p>
-            {% raw %}
             {{ page.entry.author }}
-            {% endraw %}
           </p>
           {% if page.entry.url %}
             <h4><a href="{{page.entry.url}}" target="_blank">Link to the article</a></h4>
@@ -22,8 +20,6 @@ layout: page
 
           <h5>Bibtex</h5>
           <p>
-          	{% raw %}
           	<pre lang="bibtex">{{ page.entry.bibtex }}</pre>
-          	{% endraw %}
           </p>
             
